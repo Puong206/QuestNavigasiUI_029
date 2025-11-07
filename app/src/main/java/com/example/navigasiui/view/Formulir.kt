@@ -34,7 +34,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun FormIsian(
     jenisK:List<String> = listOf("Laki-laki", "Perempuan"),
-    OnSubmitBtnClick: () ->  Unit
+    onSubmitBtnClick: () ->  Unit
 ){
     Scaffold (modifier = Modifier,
           {
@@ -87,7 +87,7 @@ fun FormIsian(
             Button(
                 modifier = Modifier.fillMaxWidth(1f)
                     .padding(25.dp),
-                onClick = OnSubmitBtnClick
+                onClick = onSubmitBtnClick
             ) {
                 Text(stringResource(id = R.string.submit))
             }
